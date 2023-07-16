@@ -6,7 +6,10 @@ package com.kowalski.day3;
 
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Scanner;
+import java.util.concurrent.ConcurrentHashMap;
 
 
 //九九乘法表
@@ -113,4 +116,28 @@ public class Sheet {
         }
     }
 
+    //找奇数偶数
+    //work2
+    @Test
+    public void test(){
+        int[] scores={0,0,1,2,3,5,4,5,2,8,7,6,9,5,4,8,3,1,0,2,4,8,7,9,5,2,1,2,3,9};
+        int odd = 0, even = 0;
+        for (int i = 0; i < scores.length; i++) {
+            if ((scores[i] % 2 == 0)) {
+                odd++;
+            } else {
+                even++;
+            }
+//            (scores[i] % 2 == 0) ? odd++ : even++;
+        }
+        System.out.println(odd+ " " +even);
+        HashMap<Integer,Double> hashMap = new HashMap<>();
+        ConcurrentHashMap<Integer,Double> concurrentHashMap = new ConcurrentHashMap<>();
+        Hashtable<Integer,Double> hashtable = new Hashtable<>();
+    }
+
+    @Test
+    public void testOut(){
+
+    }
 }
