@@ -19,7 +19,7 @@ public class RunnableDemo implements Runnable{
         try{
             for (int i = 0; i < 4; i++) {
                 System.out.println("线程:" + threadName + "," + i);
-                Thread.sleep(5000);
+                Thread.sleep(500);
             }
         }catch (InterruptedException interruptedException){
             System.out.println("线程:" + threadName + "interrupted.");
