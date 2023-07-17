@@ -33,12 +33,19 @@ public class Rectangle {
         this.height = height;
     }
 
-    public double getCircum(){
-        return (width + height) *2;
+    public double getCircum() {
+        return (width + height) * 2;
     }
 
-    public double getArea(){
+    public double getArea() {
         return width * height;
     }
 
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "width=" + width +
+                ", height=" + height +
+                '}';
+    }
 }
